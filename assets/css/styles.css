@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 :root {
-    --header-bg : #10375C
+    --header-bg: #10375c;
 }
+
 html {
     font-size: 62.5%;
 }
@@ -11,11 +12,25 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--header-bg);
 }
 /* Common */
 a {
     text-decoration: none;
+}
+
+.section-heading {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02;
+    color: #10375C;
+}
+
+.section-desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
 
 .btn {
@@ -40,6 +55,7 @@ a {
 
 /* Header */
 .header {
+    padding-top: 30px;
     min-height: 100vh;
     background-color: var(--header-bg);
 }
@@ -95,7 +111,6 @@ a {
 }
 /* Header-top */
 .header-top {
-    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -207,4 +222,91 @@ a {
 .hero__img:last-child {
     height: 410px;
     width: 210px;
+}
+
+/* Service */
+.service {
+    padding: 170px 0 ;
+}
+
+.service__heading, .service__desc {
+    text-align: center;
+}
+
+.service__desc  {
+    max-width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__list {
+    margin-bottom: 55px;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+.service-item {
+    display: flex;
+    padding: 22px;
+    width: 470px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    transform: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px 0px #0000000D;
+
+}
+
+.service-item:hover .service-item__icon {
+    color: #FFFFFF;
+    background-color: #2E80CE;
+}
+
+.service-item__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #EFF6FD;
+    color: #10375C;
+    box-shadow: 0px 8px 16px 0px #0000000D;
+    transform: 0.25s;
+}
+
+.service-item__body {
+    margin-left: 20px;
+}
+
+.service-item__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.27;
+    color: #10375C;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #575F66;
 }
